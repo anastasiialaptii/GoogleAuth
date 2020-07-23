@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KxoUinScJq9VH8nxhqnLI62fd4jItAtrsPFeibjSrL0dMVsTgp/YsI7anAIC2/iANqissWOQp+nFU6zpkdbvpg==",
+  "dgSpecHash": "EkV9P4xlJJTqYeSr76z2TX0HFe2e9xxaZwH7YshXaBPkMp/2OGiXJiBgau1+r3CKLoBzvOWmdhZmnW5/zxxcPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lapti\\source\\repos\\AuthTest\\AuthTest\\AuthTest.csproj",
+  "projectFilePath": "H:\\TechStack\\GoogleAuth\\AuthTest\\AuthTest\\AuthTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lapti\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\3.1.6\\microsoft.aspnetcore.authentication.google.3.1.6.nupkg.sha512",
     "C:\\Users\\lapti\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

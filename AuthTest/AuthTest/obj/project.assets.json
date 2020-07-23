@@ -5035,11 +5035,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lapti\\source\\repos\\AuthTest\\AuthTest\\AuthTest.csproj",
+      "projectUniqueName": "H:\\TechStack\\GoogleAuth\\AuthTest\\AuthTest\\AuthTest.csproj",
       "projectName": "AuthTest",
-      "projectPath": "C:\\Users\\lapti\\source\\repos\\AuthTest\\AuthTest\\AuthTest.csproj",
+      "projectPath": "H:\\TechStack\\GoogleAuth\\AuthTest\\AuthTest\\AuthTest.csproj",
       "packagesPath": "C:\\Users\\lapti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lapti\\source\\repos\\AuthTest\\AuthTest\\obj\\",
+      "outputPath": "H:\\TechStack\\GoogleAuth\\AuthTest\\AuthTest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lapti\\AppData\\Roaming\\NuGet\\NuGet.Config",

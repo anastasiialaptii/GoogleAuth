@@ -2,7 +2,7 @@
 using AuthTest.Models;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using System;
+using System.Linq;
 
 namespace AuthTest.Controllers
 {
@@ -21,17 +21,27 @@ namespace AuthTest.Controllers
         [HttpPost]
         public object Savesresponse(User user)
         {
-            try
+            var list = _dbContext.Users.ToList();
+            
+            foreach (var item in list)
             {
-                _dbContext.Users.Add(user);
-                _dbContext.SaveChanges();
+                if (item.id == user.id)
+                {
+                    return new Response { Message = item.idToken, Status = "Exists" };  
+                }
             }
-            catch (Exception)
-            {
-                throw;
-            }
-            return new Response
-            { Status = "Error", Message = "Invalid Data." };
+
+            _dbContext.Users.Add(user);
+            _dbContext.SaveChanges();
+            return new Response { Message = user.idToken,Status="OK" };
+        }
+
+
+        [Route("Api/Login/GetTest")]
+        [HttpGet]
+        public int GetTest()
+        {
+            return 5;
         }
     }
 }

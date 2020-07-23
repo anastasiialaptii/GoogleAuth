@@ -43,11 +43,11 @@ namespace AuthTest
             services.AddDbContext<AuthDbContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("AuthTestConnection")));
 
-            services.AddAuthentication()
-                .AddGoogle("Google", opt =>
+            services
+               .AddAuthentication()
+               .AddGoogle("Google", opt =>
                 {
                     var googleAuth = Configuration.GetSection("Authentication:Google");
-
                     opt.ClientId = googleAuth["ClientId"];
                     opt.ClientSecret = googleAuth["ClientSecret"];
                 });
