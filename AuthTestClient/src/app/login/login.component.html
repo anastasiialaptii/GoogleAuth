@@ -1,0 +1,7 @@
+<p>login works!</p>
+<button (click)="socialSignIn('google')">Sign in with Google</button>  
+<h4 *ngIf="isUserAuthenticated()"> {{LoginService.test}}   </h4>
+<div class="flex-item">
+<h4><a class="logout" (click)="logOut()">Log Out</a></h4>
+</div>
+     

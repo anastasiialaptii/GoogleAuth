@@ -21,6 +21,7 @@ export class LoginComponent implements OnInit {
     public LoginService: LoginService
   ) { }  
   ngOnInit() {  
+    this.LoginService.GetTest();
   }  
   
   public socialSignIn(socialProvider: string) {  
@@ -43,7 +44,19 @@ if (socialProvider === 'google') {
       this.users=res;  
       this.response = res.userDetail;  
       localStorage.setItem('socialusers', JSON.stringify( this.users));  
-      console.log(localStorage.setItem('socialusers', JSON.stringify(this.users)));   
+      console.log(localStorage.setItem('socialusers', JSON.stringify(this.users)));  
+      console.log(localStorage.getItem('socialusers')); 
     })  
   }  
+
+  isUserAuthenticated(){
+   let token = (localStorage.getItem('socialusers'));
+    if(token)
+    return true;
+    else return false;
+  }
+
+  logOut(){
+    localStorage.clear();
+  }
 }
